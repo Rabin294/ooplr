@@ -1,7 +1,10 @@
 <?php
 require_once 'core/init.php';
 
-echo Config::get('mysqli/host');
+// echo Config::get('mysqli/host');
+
+// $db = new DB();
+
 ?>
 
 
@@ -14,6 +17,9 @@ echo Config::get('mysqli/host');
     <title>Document</title>
 </head>
 <body>
+    <?php 
+    echo 'Hi';
+    ?>
     
 </body>
 </html>

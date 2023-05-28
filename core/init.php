@@ -4,9 +4,9 @@ session_start();
 $GLOBALS['config']=array(
     'mysqli'=>array(
         'host'=> '127.0.0.1',
-        'username'=> 'root',
+        'username'=> 'rootZ',
         'password'=> '',
-        'db'=>'OOPlogin'
+        'db'=>'OOP'
 
     ),
     'remember'=>array(
