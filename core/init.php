@@ -2,9 +2,9 @@
 session_start();
 
 $GLOBALS['config']=array(
-    'mysqli'=>array(
-        'host'=> '127.0.0.1',
-        'username'=> 'rootZ',
+    'mysql'=>array(
+        'host'=> 'localhost',
+        'username'=> 'root',
         'password'=> '',
         'db'=>'OOP'
 

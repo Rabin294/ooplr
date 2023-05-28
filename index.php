@@ -1,9 +1,15 @@
 <?php
 require_once 'core/init.php';
 
-// echo Config::get('mysqli/host');
+// Enabling error reporting
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
-// $db = new DB();
+// echo Config::get('mysql/host');
+
+// DB::getInstance();
+
+DB::getInstance()->query("SELECT username FROM users WHERE username = ? ", array('ales'));
 
 ?>
 
@@ -17,9 +23,7 @@ require_once 'core/init.php';
     <title>Document</title>
 </head>
 <body>
-    <?php 
-    echo 'Hi';
-    ?>
+   
     
 </body>
 </html>
