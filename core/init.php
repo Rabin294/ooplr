@@ -2,7 +2,7 @@
 session_start();
 
 $GLOBALS['config']=array(
-    'mysql'=>array(
+    'mysqli'=>array(
         'host'=> '127.0.0.1',
         'username'=> 'root',
         'password'=> '',
