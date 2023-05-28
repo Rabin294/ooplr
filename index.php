@@ -10,13 +10,11 @@ ini_set('display_errors', 1);
 // DB::getInstance();
 
 
- $user=DB::getInstance()->get('users', array('username', '=', 'alex'));
-
-if (!$user->count()) {
-    echo 'No user';
-} else {
-   echo $user->first()->username;
-}
+ $user = DB::getInstance()->update('users',3, array(
+     'password' => 'newpassword',
+     'name' => 'New Name'
+   
+ ));
 
 
 
