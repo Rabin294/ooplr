@@ -17,7 +17,9 @@ ini_set('display_errors', 1);
  ));
 
 
-
+if(Session::exists('success')){
+    echo Session::flash ('success');
+}
 
 
 ?>
