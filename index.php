@@ -2,8 +2,8 @@
 require_once 'core/init.php';
 
 // Enabling error reporting
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 // echo Config::get('mysql/host');
 

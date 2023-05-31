@@ -13,7 +13,7 @@ class User{
         if(!$user){
             if(Session::exists($this->_sessionName));
                 $user= Session::get($this->_sessionName);
-                
+
                 if($this->find($user)){
                     $this->_isLoggedIn = true;
 
@@ -53,6 +53,10 @@ class User{
             }
         }
         return false;
+    }
+
+    public function logout(){
+        Session::delete($this->_sessionName);
     }
 
     public function data(){
