@@ -19,7 +19,7 @@ if(Input::exists()){
             $user = new User();
             $login =$user->login(Input::get('username'), Input::get('password'));
             if($login){
-                echo 'Success';
+                Redirect::to('index.php');
             }else{
                 echo '<p> Sorry, logging in failed</p>';
             }
