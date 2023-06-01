@@ -1,4 +1,8 @@
 <?php
+// Enabling error reporting
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 class User {
     private $_db,
             $_data,
@@ -90,6 +94,20 @@ class User {
                     }   
             }
         return false;
+    }
+
+    public function hasPermission($key){
+        $group = $this->_db->get('groups', array('id', '=', $this->data()->group));
+   
+         if($group->count()){
+            $permissions = json_decode($group->first()->permissions,true);
+          
+            if($permissions[$key] == true){
+                return true;
+            }
+            
+         }
+         return false;
     }
     
     public function exists(){
